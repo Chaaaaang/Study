@@ -1,4 +1,4 @@
 # My study for 
-## Python 
-## Linear Regression 
-## so on...
+* Python 
+* Linear Regression 
+* so on...
