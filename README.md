@@ -1,5 +1,1 @@
-Hello world!!!
-
-Hello world!!!
-
-copy con README.md
+# My study for Python and Linear Regression and so on...
