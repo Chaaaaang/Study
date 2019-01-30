@@ -35,38 +35,38 @@
 
 ## 제너레이터 표현식 (Chapter 2_1)
 * 지능형 리스트에 비해 더 적은 메모리 사용. 이는 다른 생성자에 전달할 리스트를 통째로 만들지 않고 반복자 프로토콜을 이용하기 때문(1개씩 만듦)
-* 괄호로 만듦
+* 괄호로 만듦  
   -> ex) tuple(ord(symbol) for symbol in symbols)
 
 ## 튜플 : 단순한 불변 리스트가 아님 (Chapter 2_1)
-* 레코드로 이용
+* 레코드로 이용  
   -> ex) city, year, pop = ('Tokyo', 2003, 32450)
 * 튜플 언패킹
-  * 위의 ex에서 city, year 등의 변수에 값을 할당한 것이 튜플 언패킹임.
+  * 위의 ex에서 city, year 등의 변수에 값을 할당한 것이 튜플 언패킹임.  
   -> ex) lax_coor = (33, -118)
         lat, long = lax
-  * 초과항목의 경우 *을 사용하여 이용 가능
+  * 초과항목의 경우 *을 사용하여 이용 가능  
   -> ex) a,b, *rest = range(5)
  
   * namedtuple() : 튜플의 필드에 이름을 붙일 수 있음 (tuple과 같은 메모리를 사용하며 dict 등의 객체보다 메모리 적게 씀)
-  -> ex) City = namedtuple('City', 'name country population coordinates')
-        # City가 큰 객체. name, country, population, coordinates는 필드명
-        tokyo = City('Tokyo', 'JP', 36.933, (35, 139))
-        tokyo.population
-        tokyo[1]
+  -> ex) City = namedtuple('City', 'name country population coordinates')  
+        # City가 큰 객체. name, country, population, coordinates는 필드명  
+        tokyo = City('Tokyo', 'JP', 36.933, (35, 139))  
+        tokyo.population  
+        tokyo[1]  
         
 ## 슬라이싱 (Chapter 2_1)
 * [1:5:3] : 1~5번째 값까지, 3 단위씩 건너뛴 값.
-* 슬라이스에 할당 가능
+* 슬라이스에 할당 가능  
  -> ex) l = list(range(10))
-        l[2:5] = [20,30]
+        l[2:5] = [20,30]  
 
 ## 시퀀스에 덧셈, 곱셈 연산자 (Chapter 2_1)
 * 리스트의 리스트 만들기
-  * 값을 가진 리스트를 초기화 할 때 사용
- -> ex) 올바른 예
- board = [['_'] * 3 for i in range(3)]
- -> ex) 잘못된 예
+  * 값을 가진 리스트를 초기화 할 때 사용  
+ -> ex) 올바른 예  
+ board = [['_'] * 3 for i in range(3)]  
+ -> ex) 잘못된 예  
  weird_bopard = [['_'] *3] * 3      # 같은 곳을 참조하는 리스트 3개를 만들게 됨 -> 1개 값 바꾸면 3개의 리스트의 위치값이 똑같이 바뀜
  
 ## 시퀀스의 복합 할당 (Chapter 2_1)
