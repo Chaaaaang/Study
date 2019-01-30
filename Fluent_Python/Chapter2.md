@@ -48,7 +48,7 @@
   * 초과항목의 경우 *을 사용하여 이용 가능  
   -> ex) a,b, *rest = range(5)
  
-  * namedtuple() : 튜플의 필드에 이름을 붙일 수 있음 (tuple과 같은 메모리를 사용하며 dict 등의 객체보다 메모리 적게 씀)
+  * namedtuple() : 튜플의 필드에 이름을 붙일 수 있음 (tuple과 같은 메모리를 사용하며 dict 등의 객체보다 메모리 적게 씀)  
   -> ex) City = namedtuple('City', 'name country population coordinates')  
         # City가 큰 객체. name, country, population, coordinates는 필드명  
         tokyo = City('Tokyo', 'JP', 36.933, (35, 139))  
@@ -74,3 +74,14 @@
 
 ## sort vs sorted (Chapter 2_1)
 * sort는 바로 적용되므로 새 객체를 생성하지 않음. 결과값은 None 반환(객체 생성 안했으므로), sorted는 새로운 리스트를 생성해서 반환함.
+
+## 리스트가 아닌 시퀀스들
+* 배열 : 리스트 안에 숫자만 들어있다면 배열을 쓰는 것이 효율적임  
+ -> ex) from array import array  
+        floats = array('d', (random() for i in range(10**7)))     # 'd' : 배밀도 실수 생성
+* 덱 : queue의 양쪽 어디에서든 빠르게 삽입 및 삭제 가능(양방향 큐)  
+ -> ex) from collections import deque  
+        dq = deque(range(10), maxlen=10)     # 10으로 최대용량 제한하여 이보다 많이 들어오면 다른 데이터가 삭제됨
+  * 그 외의 큐
+    * queue : 덱과 달리 공간이 꽉 차도 항목을 버리지 않고 새로운 변수를 블로킹 함.
+    * multiprocessing : queue와 비슷하나 프로세스 간 통신을 지원하기 위해 설계된 고유한 Queue 클래스 구현.
