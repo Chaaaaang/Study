@@ -23,7 +23,7 @@
 
 ## 지능형 리스트 (Chapter 2_1)
 * 지능형 리스트는 리스트 안에서 for문을 이용하여 리스트를 만듦.
- -> ex) [ord(symbol) for symbol in symbols]
+-> ex) [ord(symbol) for symbol in symbols]
 * 지능형 리스트를 사용하지 않아도 되는 경우
   * 생성된 리스트 미사용시
   * 리스트 구문이 두 줄 이상 넘어가는 경우 : 코드 분할 또는 다른 방법.
