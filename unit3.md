@@ -18,8 +18,7 @@
   -> 들여쓰기 안해도 에러는 발생하지 않으나 코드 가독성이 좋음 : 공백 2칸, 4칸, Tab 등이 있음.
 
 ex)
-<pre><code>
-`` #include <stdio.h> ``
+#include <stdio.h>
 
 int main()
 {
@@ -28,8 +27,6 @@ int main()
 
 	return 0;
 }
-
-</pre></code>
 
 
 # 문자열 출력하기
