@@ -21,18 +21,20 @@
 
 #include <stdio.h>
 <pre><code>
-  int main()
-    {
-      printf("%s\n", "Hello world!");
-      printf("Hello world!\n");
-      return 0;
-    }
+int main()
+{
+	printf("%s\n", "Hello world!");
+	printf("Hello world!\n");
+	return 0;
+}
 </pre></code>
 
 <hr/>
 
 # 문자열 출력하기
-
+* %s가 Hello world!로 바뀌는 것임.
+* 서식사용자는 내용 여러 개 출력, 출력 형태 바꿀 때 유용.
+* 공백도 출력에 영향을 주므로 주의 할 것.
 
 <hr/>
 
@@ -41,12 +43,11 @@
 <pre><code>
 int main() 
 {
-	// %s가 Hello world!로 바뀌는 것임.
-	// 서식사용자는 내용 여러 개 출력, 출력 형태 바꿀 때 유용.
+	
 	printf("%s\n", "Hello, world!");
 	printf("%s %s\n", "Hello,", "1234");
 
-	// 공백도 출력에 영향 줌.
+	
 	printf("%s%s\n", "Hello,", " 1234");
 	return 0;
 }
@@ -55,6 +56,7 @@ int main()
 <hr/>
 
 * Q : main이 여러 개면?
+  
   -> A : .c 파일 추가해서 main 여러 개 하면 오류 뜸 -> 1개만 있어야 함.
 
   예시
