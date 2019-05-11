@@ -19,14 +19,14 @@
 
 
 #include <stdio.h>
-
+<pre><code>
   int main()
     {
       printf("%s\n", "Hello world!");
       printf("Hello world!\n");
       return 0;
     }
-
+</pre></code>
 
 # 문자열 출력하기
 
