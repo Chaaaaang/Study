@@ -18,7 +18,8 @@
   -> 들여쓰기 안해도 에러는 발생하지 않으나 코드 가독성이 좋음 : 공백 2칸, 4칸, Tab 등이 있음.
 
 <pre><code>
-#include <stdio.h>
+
+#include<stdio.h>
 
 int main()
 {
@@ -29,6 +30,7 @@ int main()
 
 
 }
+
 </pre></code>
 
 // 서식 지정자
