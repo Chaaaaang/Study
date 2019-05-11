@@ -17,10 +17,9 @@
 * 코드가 1줄이어서 중괄호 생략해도 들여쓰기 해야 함.
   -> 들여쓰기 안해도 에러는 발생하지 않으나 코드 가독성이 좋음 : 공백 2칸, 4칸, Tab 등이 있음.
 
-<pre><code>
 ex)
-
-#include \<stdio.h>
+<pre><code>
+#include `<stdio.h>
 
 int main()
 {
