@@ -20,7 +20,7 @@
 <pre><code>
 ex)
 
-#include <stdio.h>
+#include \<stdio.h>
 
 int main()
 {
@@ -32,7 +32,12 @@ int main()
 
 </pre></code>
 
-// 서식 지정자
+
+# 문자열 출력하기
+
+
+<pre><code>
+
 #include <stdio.h>
 
 int main() 
@@ -45,8 +50,9 @@ int main()
 	// 공백도 출력에 영향 줌.
 	printf("%s%s\n", "Hello,", " 1234");
 	return 0;
-
 }
+</pre></code>
+
 
 // Q : main이 여러 개면?
 // A : .c 파일 추가해서 main 여러 개 하면 오류 뜸 -> 1개만 있어야 함.
