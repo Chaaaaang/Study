@@ -1,12 +1,10 @@
-### 참고 : C1010 error : https://jepo.tistory.com/45 에서 해결
+##### * 참고 : C1010 error : https://jepo.tistory.com/45 에서 해결
 
 
+# 문자열 출력하기
 
-/*
-// 문자열 출력하기
-
-// 프로그래밍(코딩) 과정 : 소스 코드 편집 -> 컴파일 -> 실행 과정 반복.
-//  -> C_stamp.c -> C_stamp.obj -> C_stamp.exe 로 생성됨.(c 소스코드가 exe로 생성되는 과정)
+**프로그래밍(코딩) 과정 : 소스 코드 편집 -> 컴파일 -> 실행 과정 반복.
+  -> C_stamp.c -> C_stamp.obj -> C_stamp.exe 로 생성됨.(c 소스코드가 exe로 생성되는 과정)
 
 // #include : 헤더 파일을 퐇마하는 문법.
 // printf 함수를 쓰려면 stdio.h 헤더 파일 필요함.
