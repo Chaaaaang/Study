@@ -1,6 +1,3 @@
-
-
-
 # 문자열 출력하기
 
 ##### * 참고 : C1010 error : https://jepo.tistory.com/45 에서 해결
@@ -59,8 +56,10 @@ int main()
   
   -> A : .c 파일 추가해서 main 여러 개 하면 오류 뜸 -> 1개만 있어야 함.
 
-  예시
+예시
+<hr/>
 <pre><code>
 if (a>10)
 	printf("a");
 </pre></code>
+<hr/>
