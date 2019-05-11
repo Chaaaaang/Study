@@ -4,6 +4,8 @@
 # 문자열 출력하기
 
 ##### * 참고 : C1010 error : https://jepo.tistory.com/45 에서 해결
+##### * markdown 사용법 : https://gist.github.com/ihoneymon/652be052a0727ad59601
+
 * 프로그래밍(코딩) 과정 : 소스 코드 편집 -> 컴파일 -> 실행 과정 반복.
   -> C_stamp.c -> C_stamp.obj -> C_stamp.exe 로 생성됨.(c 소스코드가 exe로 생성되는 과정)
 
@@ -15,7 +17,7 @@
 * 코드가 1줄이어서 중괄호 생략해도 들여쓰기 해야 함.
   -> 들여쓰기 안해도 에러는 발생하지 않으나 코드 가독성이 좋음 : 공백 2칸, 4칸, Tab 등이 있음.
 
-
+<pre><code>
 #include <stdio.h>
 
 int main()
@@ -27,6 +29,7 @@ int main()
 
 
 }
+</pre></code>
 
 // 서식 지정자
 #include <stdio.h>
