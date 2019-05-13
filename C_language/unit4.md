@@ -15,7 +15,7 @@
 ### 예제1) 자료형 정수 이름 선언 및 할당
 
 
-<hr/>
+<hr>
 
 #include <stdio.h>
 <pre><code>
@@ -39,7 +39,7 @@ int main() {
 <br /><br />
 ### 예제2) 여러 변수 선언하기
 
-<hr/>
+<hr>
 
 #include <stdio.h>
 <pre><code>
@@ -62,7 +62,8 @@ int main() {
 <br /><br />
 ### 예제3) 변수 선언과 할당을 동시에 하기
 
-<hr/>
+<hr>
+
 #include <stdio.h>
 <pre><code>
 
@@ -75,6 +76,7 @@ int main() {
 	return 0;
 
 }
+
 </pre></code>
 
 
